@@ -1,0 +1,115 @@
+/* Wrapper styles */
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background: #f9f5ef;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Toggle button styles */
+.wrapper button {
+  padding: 12px 24px;
+  background: #ff914d;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.wrapper button:hover {
+  background: #e67628;
+}
+
+/* Accordion container */
+.accordian {
+  width: 500px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Each item */
+.item {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Title section */
+.title {
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.title:hover {
+  background-color: #f1f1f1;
+}
+
+.title h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  flex: 1;
+}
+
+/* Toggle icon */
+.title span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff914d;
+}
+
+/* Content section */
+.content {
+  color: #444;
+  padding: 15px 20px;
+  background-color: #fdf7f2;
+  animation: fadeIn 0.3s ease-in-out;
+  line-height: 1.5;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toggle-button {
+  padding: 12px 24px;
+  background: #ff914d;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-button:hover {
+  background: #e67628;
+  transform: scale(1.02);
+}
+
+.toggle-button.active {
+  background: #1e90ff; /* Change color when active (multi-selection on) */
+}
+
